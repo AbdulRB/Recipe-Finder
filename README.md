@@ -1,3 +1,3 @@
 # Recipe-Finder
-A Repository for Recipe Finder edited
+A Repository for Recipe Finder
 

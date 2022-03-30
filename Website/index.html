@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Recipe Finder</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="pageBanner">
+            <h1>Recipe Finder</h1>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html" title="Go to Home">Home</a></li>
+                    <li><a href="#" title="Learn about us">About Us</a></li>
+                    <li><a href="#" title="How to Contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="recipeSearch">
+            <section>
+                <h2><strong>Recipe Finder</strong></h2>
+                <article class="searchBox">
+                    <form method="post">
+                        <label for="ingredients">Ingredients</label>
+                        <input type="text" name="ingredients" id="ingredients" maxlength="20"> <br>
+
+                        <label for="noOfPeople">Number of People</label>
+                        <input type="text" name="noOfPeople" id="noOfPeople" maxlength="4"> <br>
+
+                        <input type='hidden' id="indicator" name="indicator">
+                        <input type="submit" name="searchBtn" id="searchBtn" value="Search"><br>
+                    </form>
+
+                    <script src='js/payment.js'></script>
+
+                </article>
+            </section>
+
+        </main>
+
+        <footer id="searchPageFooter">
+            <p>Website created by: Recipe Finder Group</p>
+        </footer>
+
+    </body>
+</html>

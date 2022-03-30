@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/*this will reset the browser*/
+html, body, div, section, article, header, footer, nav, h1, h2, h3, p, em, strong, img, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(174, 195, 252);
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 386px;
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+
+li {
+    width: 120px;
+    height: 40px;
+    margin: 0px 4px;
+    float: left;
+    font-size: 20px;
+}
+
+li {
+    border-right: 1px solid #bbb;
+  }
+  
+li:last-child {
+    border-right: none;
+}
+
+a {
+    display: block;
+    height: 40px;
+    margin: 0px 4px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: rgb(209, 206, 206);
+}
+ 
+a {
+    text-decoration: none;
+}
+
+#pageBanner h1 {
+	margin-left: 0;
+	font-size: 2.7em;
+	color: #000000;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.logo {
+    margin-left: 0;
+    float: left;
+    width: 100px;
+    padding-left: 10px;
+    padding-top: 13px;
+    padding-right: 10px;
+}
+
+.searchBox {
+    width: 39%;
+    height: auto;
+    background-color: #bbb;
+    display: inline-block;
+    border: thick double black;
+    margin:2% 5%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+.searchBox {
+    width: 80%;
+    height: auto;
+    background-color: #bbb;
+    margin: 2% 10%;
+}
+
+#searchBtn {
+    font-size: 1.;
+    text-align: center;
+    margin-top: 10%;
+    padding: 0 10%;
+    border-radius: 5px;
+}
+}
+
+
+#searchBtn {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5%;
+    padding: 0 10%;
+    border-radius: 5px;
+}
+
+.bookImg1 {
+    float: left;
+    width: 35%;
+    height: auto;
+    padding: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+.bookImg1 {
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    }
+}
+
+h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bbb;
+    margin-top: 5px;
+    border-top: 1px solid #bbb;
+    padding-top: 10px;
+}
+
+#bookText1 {
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+footer#searchPageFooter p {
+    position: fixed;
+    text-align: center;
+    padding: 15px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+    background: rgb(174, 195, 252);
+}
+
+footer#payPageFooter p {
+    text-align: center;
+    padding: 2% 0;
+    margin-top: 14.5%;
+    background-color: rgb(174, 195, 252);
+}
+
+footer#successPageFooter p {
+    text-align: center;
+    padding: 2% 0;
+    margin-top: 14.5%;
+    background-color: rgb(174, 195, 252);
+}
+
+.paymentBox {
+    width: 49%;
+    height: 250px;
+    background-color: rgb(235, 229, 229);
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+    margin-top: 30px;
+    border: 3px solid rgb(209, 206, 206);
+}
+
+@media screen and (max-width: 1200px) {
+    .paymentBox {
+        width: 70%;
+        height: 300px;
+        background-color: rgb(223, 219, 219);
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 1.5em;
+        padding-top: 5%;
+    }
+
+    #cardText {
+        text-align: center;
+        padding-right: 30px;
+        width: 130px;
+        display: block;
+        margin: 2% 15%;
+    }
+}
+
+#cardText {
+    text-align: left;
+    padding-right: 30px;
+    display: block;
+    border: 1px solid black;
+    margin-top: 2%;
+}
+
+#cardLogo {
+    float: left;
+    width: 13%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 3%;
+    padding-top: 10px;
+}
+
+.cardImg {
+    float: right;
+    width: 35%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#cardNumber{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+#expDate {
+    margin-top: 25px;
+    width: 70px;
+    margin-left: 6px;
+}
+
+#expYear {
+    width: 70px;
+}
+
+#secCode {
+    margin-top: 25px;
+    width: 60px;
+    margin-left: 17px;
+}
+
+label {
+    padding: 30px;
+}
+
+#submitBtn {
+    margin-left: 20%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+#hashedNumber {
+    font-size: 1.5em;
+    margin: 5%;
+    margin-left: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

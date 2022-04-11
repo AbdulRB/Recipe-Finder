@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost","root","", "recipes");
+$conn = mysqli_connect("localhost","root","", "recipedatabase");
 if (!$conn) {
     die ("Failed");
 }

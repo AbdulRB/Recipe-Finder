@@ -69,13 +69,13 @@
     
                 if ($resultCheck > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo $row['Recipe Name'] . "<br>";
+                        echo $row['recipeName'] . "<br>";
                         ?>
-                        <html><img src ="<?php echo $row['Recipe Image']; ?>"/><br></html>
+                        <html><img src ="<?php echo $row['recipeImage']; ?>" style="width:300px;height:300px;"/><br></html>
                         <?php
-                        echo "Serves: " . $row['Serves'] . "<br>";
-                        echo $row['Ingredients'] . "<br>";
-                        echo $row['Method'] . "<br>";
+                        echo "Serves: " . $row['serves'] . "<br>";
+                        echo $row['ingredientsList'] . "<br>";
+                        echo $row['recipeMethod'] . "<br>";
                     }
                 }
     

@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Switch Template</title>
+    <title>Homepage</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
+
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header">
@@ -16,9 +17,9 @@
                 <div class="site-header-inner">
                     <div class="brand header-brand">
                         <h1 class="m-0">
-                            <a href="#">
-								<img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
-								<img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+                            <a href="index.html">
+								<img class="header-logo-image asset-light" src="dist/images/logo.jpeg" alt="Logo" width="170" height ="170">
+								<img class="header-logo-image asset-dark" src="dist/images/logo.jpeg" alt="Logo" width="170" height ="170">
                             </a>
                         </h1>
                     </div>
@@ -50,9 +51,17 @@
 								<img class="hero-media-illustration-image asset-light" src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
 								<img class="hero-media-illustration-image asset-dark" src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
 							</div>
-							<div class="hero-media-container">
-								<img class="hero-media-image asset-light" src="dist/images/hero-media-light.svg" alt="Hero media">
-								<img class="hero-media-image asset-dark" src="dist/images/hero-media-dark.svg" alt="Hero media">
+							<div id="slider">
+                                <ul id="slideWrap"> 
+                                    <li><img src="recipeImages/broccoliPasta.jpeg" alt=""></li>
+                                    <li><img src="recipeImages/cheesyHamBrocPasta.jpeg" alt=""></li>
+                                    <li><img src="recipeImages/easyChickenCurry.jpeg" alt=""></li>
+                                    <li><img src="recipeImages/carrotRaisinSandwich.jpeg" alt=""></li>
+                                    <li><img src="recipeImages/meatballPasta.jpeg" alt=""></li>
+                                </ul>
+                                <a id="prev" href="#">&#8810;</a>
+                                <a id="next" href="#">&#8811;</a>
+                                <script src='dist/js/slider.js'></script>
 							</div>
 						</div>
                     </div>
@@ -138,8 +147,8 @@
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
                         <a href="#">
-							<img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
-							<img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+							<img class="asset-light" src="dist/images/logo.jpeg" alt="Logo" width="50" height ="50">
+							<img class="asset-dark" src="dist/images/logo.jpeg" alt="Logo" width="50" height ="50">
                         </a>
                     </div>
                     <ul class="footer-links list-reset">

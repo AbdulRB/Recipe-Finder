@@ -32,10 +32,9 @@
         </header>
 
     <main>
-        <section class="hero">
         <div class="container">
             <article class="recipeFinderBox">
-                <form name="form" action="" method="post">
+                <form name="form" action="" method="post" id="recipeFinderForm">
                     <label>
                         <p>Please enter three ingredients:</p>
                         <input type="text" name="ingredient1" minlength="3" maxlength="20" required>
@@ -60,12 +59,17 @@
                 </form>
             </article>
         </div>
-        </section>
 
         <?php
 
             if (isset($_POST['submitBtn'])) {
-                
+               
+                ?>
+
+                <div class="container">
+                <section name="recipeDisplay" id='recipeDisplay'>    
+
+                <?php 
                 $ing1 = $_POST['ingredient1'];
                 $ing2 = $_POST['ingredient2'];
                 $ing3 = $_POST['ingredient3'];
@@ -97,11 +101,11 @@
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo $row['recipeName'] . "<br>";
                         ?>
-                        <html><img src ="<?php echo $row['recipeImage']; ?>" style="width:300px;height:300px;"/><br></html>
+                        <html><img src ="<?php echo $row['recipeImage']; ?>" id="recipeImage"/><br></html>
                         <?php
                         echo "Serves: " . $row['serves'] . "<br>";
-                        echo $row['ingredientsList'] . "<br>";
-                        echo $row['recipeMethod'] . "<br>";
+                        echo $row['ingredients'] . "<br>";
+                        echo $row['timeTaken'] . "<br>";
                     }
                 }
     
@@ -111,6 +115,8 @@
             }
 
         ?>
+        </section>
+        </div>
         </main>
 
         <footer class="site-footer has-top-divider">

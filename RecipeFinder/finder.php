@@ -106,6 +106,13 @@
                         echo "Serves: " . $row['serves'] . "<br>";
                         echo $row['ingredients'] . "<br>";
                         echo $row['timeTaken'] . "<br>";
+                        ?>
+                        <html>
+                            <a href="recipepage.php">
+                                <button type="submit" name="viewBtn">View Recipe</button>
+                            </a>
+                        </html>
+                        <?php
                     }
                 }
     

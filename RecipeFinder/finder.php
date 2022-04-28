@@ -74,7 +74,7 @@
                 $ing2 = $_POST['ingredient2'];
                 $ing3 = $_POST['ingredient3'];
                 $serves = $_POST['serves'];
-                $dietReq = $_POST['dietReq'];
+                $dietReq = $_POST['dietReq'] ?? "";
     
                 
                 if ($serves == "" && $dietReq == "") {
